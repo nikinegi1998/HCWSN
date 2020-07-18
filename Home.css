@@ -6,7 +6,7 @@ body{
 
 ::-webkit-scrollbar{
     height: 0px;
-    width: 7px;
+    width: 8px;
 }
 ::-webkit-scrollbar-thumb{
     background-color: #FF7619;
@@ -69,9 +69,6 @@ body{
 .fa-phone{
     color: #FF7619;
 }
-@media screen and (max-width: 900px){
-
-}
 
 /* copyright design */
 footer .copyright-bar{
@@ -117,6 +114,7 @@ footer .copyright-bar{
     margin-top: 1px;
     background-color: #262F36;
     height: 70px;
+    z-index: 1;
     border-bottom: 4px solid #FF7619;
 }
 .menu-items ul{
@@ -149,6 +147,10 @@ footer .copyright-bar{
     padding: 30px 8px 0px 8px;
 }
 .menu-items ul li a:hover{
+    color: #FF7619;
+    transition: .5s ease;
+}
+.menu-items ul li:hover{
     color: #FF7619;
     transition: .5s ease;
 }
@@ -236,23 +238,55 @@ footer .copyright-bar{
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("img6.png");
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
     animation: slide 10s infinite;
 }
 @keyframes slide{
     0%{
-        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("img6.png");
-    }
-    
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("img6.png");
+    }    
     25%{
-        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("img3.jpg");
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("img3.jpg");
     }
     50%{
-        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("img2.jpg");
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("img2.jpg");
     }
     75%{
-        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("img1.jpg");
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("img1.jpg");
     }
     100%{
         background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("img3.jpg");
     }
+}
+
+/* images button */
+.img-btn-left{
+    left: 1%;
+}
+.img-btn-right{
+    right: 1%;
+}
+.size{
+    top: 45%;
+    position: absolute;
+    background-color: #FF7619;
+    opacity: 0.6;
+    border: hidden;
+    visibility: hidden;
+    padding: 5px 10px;
+    color: #E9E9E9;
+    font-size: 30px;
+}
+.images-setting:hover .size{
+    visibility: visible;
+}
+.size:hover{
+    opacity: 0.9;
+}
+.tag-line{
+    position: absolute;
+    color: #E9E9E9;
+    top:38%;
+    left:31%;
+    font-size: 55px;
 }
