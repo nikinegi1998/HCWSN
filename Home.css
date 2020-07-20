@@ -7,7 +7,7 @@ body{
 /* Scrollbar */
 ::-webkit-scrollbar{
     height: 0px;
-    width: 8px;
+    width: 3.5px;
 }
 ::-webkit-scrollbar-thumb{
     background-color: #FF7619;
@@ -255,6 +255,43 @@ body{
     font-size: 55px;
 }
 
+/* Team Members Section Design */
+.team-members{
+    height: 800px;
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url("TM.jpeg");;
+}
+.team-members-header{
+    position: absolute;
+    left: 28%;
+}
+.team-members-header h1 a{
+    font-size: 40px;
+    padding-bottom: 6px;
+    background-image: linear-gradient(#FF7619, #FF7619);
+    background-size: 0 3.5px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: all 1.5s ease-out;
+    text-decoration: none;
+    color: #ffffff;
+}
+.team-members-header h1 a:hover{
+    background-size: 100% 3.5px, auto;
+}
+.team-members-header p{
+    font-size: 20px;
+    top: 10%;
+    color: #ffffff;
+}
+.team-members-info{
+    position: absolute;
+}
+
 /* Sign-up designing */
 .sign-up-area{
     position: relative;
@@ -334,7 +371,7 @@ input[type=email]:focus, input[type=text]:focus{
     left: 28%;
     top: 8%;
 }
-.footer-menu-head, .footer-items-head{color: #ffffff;font-size: 26px; padding-left: 34%;}
+.footer-menu-head, .footer-items-head{ color: #ffffff;font-size: 26px; padding-left: 34%;}
 .footer-menu ul li a, .footer-items ul li a{
     text-decoration: none;
     color: #B6B6B6;
@@ -401,6 +438,7 @@ input[type=email]:focus, input[type=text]:focus{
     color: #ffffff;
     transition: all .7s ease;
     border-color: #ffffff;
+    -webkit-transform: scale(1.16, 1.16);
     transform: scale(1.16, 1.16);
 }
 .fa-facebook{
@@ -428,3 +466,15 @@ input[type=email]:focus, input[type=text]:focus{
     font-family: sans-serif;
     color: #B6B6B6;
 }
+.cpr-link{
+    text-decoration: none;
+    color: #B6B6B6;
+    padding-bottom: 3px;
+    background-image: linear-gradient(#B6B6B6, #B6B6B6);
+    background-size: 0 1.5px, auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: all .5s ease;
+}
+.cpr-link:hover{ background-size: 100% 1.5px, auto;}
+
