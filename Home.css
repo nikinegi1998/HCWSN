@@ -4,6 +4,7 @@ body{
     overflow-x: hidden;
 }
 
+/* Scrollbar */
 ::-webkit-scrollbar{
     height: 0px;
     width: 8px;
@@ -69,43 +70,6 @@ body{
 }
 .fa-phone{
     color: #FF7619;
-}
-
-/* copyright design */
-footer .copyright-bar{
-    margin: 0; 
-    bottom: 0;
-    max-width: 100%;
-    background-color: #243238;
-    height: 500px;
-}
-.fa-facebook{
-    color: #B6B6B6;
-}
-.fa-instagram{
-    color: #B6B6B6;
-}
-.fa-twitter{
-    color: #B6B6B6;
-}
-.fa-youtube{
-    color: #B6B6B6;
-}
-.copyright-bar .social-media a:hover i{
-    background-color: #FF7619;
-    border-color: white;
-    color: white;
-}
-.social-media{
-    padding: 4px;
-    display: flex;
-}
-.social-media a i{
-    padding: 7px;
-    margin-left: 15px;
-    margin-bottom: 5px;
-    border: 1px solid #B6B6B6;
-    border-radius: 50px;
 }
 
 /* navigation bar design */
@@ -292,6 +256,7 @@ footer .copyright-bar{
     font-size: 55px;
 }
 
+<<<<<<< HEAD
 
 /* why ngo */
 
@@ -497,4 +462,178 @@ footer .copyright-bar{
 .card3:hover{
     background-image: linear-gradient(rgba(255,118,25, 0.8),rgba(255,118,25, 0.8)), url(inspiration.jpg);
    
+=======
+/* Sign-up designing */
+.sign-up-area{
+    position: relative;
+    height: 120px;
+    bottom: 10%;
+    background-color: #FF7619;
+}
+.btn-subscribe{
+    position: absolute;
+    right: 6%;
+    bottom: 33%;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    padding: 12px 20px;
+    font-weight: bold;
+    background-color: #E9E9E9;
+    color: #FF7619;
+    transition: color .5s ease;
+    transition: background-color .5s ease;
+}
+.btn-subscribe:hover{
+    color: #E9E9E9;
+    background-color: #243238;
+}
+.btn-subscribe:active{
+    transform: translateY(3px);
+}
+.sign-up-para{
+    color: #ffffff;
+    opacity: 0.8;
+    font-family: sans-serif;
+    position: absolute;    
+}
+.pos-1{
+    top: 1%;
+    left: 6%;
+}
+.pos-2{
+    top: 43%;
+    left: 6%;
+    text-align: left;
+}
+.sign-up-details{
+    position: absolute;
+    top: 38%;
+    opacity: 0.8;
+    right: 18%;
+}
+#email, #name{
+    border: #ffffff;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 5px;
+}
+input[type=email]:focus, input[type=text]:focus{
+    background-color: rgb(161, 161, 161);
+}
+
+/* footer design */
+.footer{
+    position: relative;
+    top: 0px;
+    background-color: #243238;
+    height: 350px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.footer-menu{
+    position: absolute;
+    left: 10%;
+    top: 8%;
+}
+.footer-items{
+    position: absolute;
+    left: 28%;
+    top: 8%;
+}
+.footer-menu-head, .footer-items-head{color: #ffffff;font-size: 26px; padding-left: 34%;}
+.footer-menu ul li a, .footer-items ul li a{
+    text-decoration: none;
+    color: #B6B6B6;
+    line-height: 35px;
+    font-size: 19px;
+    text-align: left;
+}
+.footer-menu ul li a:hover, .footer-items ul li a:hover{
+    color: #FF7619;
+    transition: color .8s ease;
+}
+.footer-menu ul li, .footer-items ul li{list-style: none;}
+.gallery{
+    position: absolute;
+    left: 48%;
+    top: 8%;
+    width: 280px;
+}
+.gallery h2{left: 20%; color: #ffffff;}
+.gallery div{   
+    position: absolute;
+    display: flex;
+    flex-flow: row wrap;
+}
+.gallery div a img{
+    width: 80px;
+    height: auto;
+    padding: 5%;    
+}
+.contacts{
+    left: 75%;
+    position: absolute;
+    top: 8%;
+    width: 300px;
+}
+.contacts h2{ color: #ffffff;}
+.con-pad{ padding-bottom: 5%;}
+.pos-1 i{
+    position: absolute;
+    border: 1px solid #B6B6B6;
+    left: 5%;
+    top: 100%;
+    padding: 3% 4%;
+    border-radius: 50%;
+}
+.pos-2 i{
+    position: absolute;
+    border: 1px solid #B6B6B6;
+    left: 25%;
+    top: 100%;
+    padding: 2.8%;
+    border-radius: 50%;
+}
+.pos-3 i{
+    position: absolute;
+    top: 100%;
+    border: 1px solid #B6B6B6;
+    left: 45%;
+    padding: 2.5%;
+    border-radius: 50%;
+}
+.pos-1 i:hover, .pos-2 i:hover, .pos-3 i:hover{
+    background-color: #FF7619;
+    color: #ffffff;
+    transition: all .7s ease;
+    border-color: #ffffff;
+    transform: scale(1.16, 1.16);
+}
+.fa-facebook{
+    color: #B6B6B6;
+}
+.fa-instagram{
+    color: #B6B6B6;
+}
+.fa-twitter{
+    color: #B6B6B6;
+}
+
+/* copyright design */
+.copyright{
+    height: 50px;
+    border-top: 1px solid rgb(94, 92, 92);
+    position: relative;
+    background-color: #243238;
+}
+.cpr-content{
+    position: absolute;
+    top: 30%;
+    left: 33%;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #B6B6B6;
+>>>>>>> refs/remotes/origin/master
 }
