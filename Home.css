@@ -28,6 +28,7 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    overflow: hidden;
 }
 .img-logo{
     width: 20%;
@@ -50,7 +51,7 @@ body{
     margin: 12px 5px 5px 0px;
 }
 .icon-content h3{
-    font-size: 13px;
+    font-size: 11px;
     padding-top: 12px;
     font-family:  'Raleway', sans-serif;
 }
@@ -119,7 +120,7 @@ footer .copyright-bar{
 }
 .menu-items ul{
     position: absolute;
-    margin-left: 6%;
+    margin-left: 5%;
     top: 0px;
 }
 .menu-items ul li{
@@ -134,7 +135,7 @@ footer .copyright-bar{
     top: 0px;
     font: normal bold 13px sans-serif;
     height: 40px;
-    padding: 14px 10px 0px 8px;    
+    padding: 14px 17px 0px 8px;    
 }
 .menu-items ul li a{
     display: block;
@@ -289,4 +290,211 @@ footer .copyright-bar{
     top:38%;
     left:31%;
     font-size: 55px;
+}
+
+
+/* why ngo */
+
+.aboutngo{  
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 50px;
+    width:60%;
+    height: 300px;
+    /* background-color: red; */
+}
+
+.aboutngo h1{
+    text-align: center;
+}
+
+.aboutngo p{
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 22px;
+    text-align: justify;
+}
+
+.latestevents{
+    display: block;
+    margin-top: 10px;
+    margin-right: 50px;
+    padding-bottom: 10px;
+    float: right;
+    background-color: rgb(212, 209, 209);
+   width: 32%;
+   height: 300px;
+}
+
+.latestevents h3{
+    text-align: center;
+    padding-bottom: 25px;
+    color:#FF7619;
+}
+.latestevents aside{
+    margin-top: 0px;
+    display: block;
+    
+    
+}
+
+.latestevents img{
+    padding-top: 5px;
+    padding-left: 10px;
+    height: 70px;
+    width: 30%;
+}
+.latestevents a{
+    /* padding-top: 10px; */
+    float: right;
+    margin-top: 5px;
+    /* margin-left: 0px; */
+    margin-right: 150px;
+    /* background-color: violet; */
+    text-decoration: none;
+    color: #243238;
+
+}
+
+.latestevents a:hover{
+    color: #FF7619;
+}
+.latestevents p{
+    width: 63%;
+    float: right;
+    /* padding-right: 5px; */
+    font-size: 12px;
+}
+
+/* cards */
+.cards{
+    margin-top: 50px;
+    /* display: inline-block; */
+    width: 80%;
+    margin-left: 130px;
+    flex-direction: column;
+    /* background-color: yellow; */
+}
+.card1{
+    display: inline-block;
+    height: 250px;
+    width: 30%;
+    /* background-image: url(img2); */
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(donate.jpg);
+    background-size: contain;
+    color: #ffffff;
+}
+
+.card2{
+    display: inline-block;
+    height: 250px;
+    width: 30%;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-image: linear-gradient(rgba(255,118,25, 0.7),rgba(255,118,25, 0.7)), url(volunteer.png); 
+    background-size: contain;
+    color: #ffffff;
+}
+
+.card3{
+    
+    display: inline-block;
+    height: 250px;
+    width: 30%;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(inspiration.jpg);
+    background-size: contain;
+    color: #ffffff;
+}
+
+.card1 h3{
+    font-weight: bolder;
+    text-align: center;
+    font-size: 24px;
+}
+
+.card2 h3{
+    font-weight: bolder;
+    font-size: 24px;
+    text-align: center;
+}
+
+.card3 h3{
+    font-weight: bolder;
+    font-size: 24px;
+    text-align: center;
+}
+
+.card1 p{
+    padding: 20px;
+    margin-top: 80px;
+    text-align: justify;
+}
+
+.card2 p{
+    padding: 20px;
+    margin-top: 80px;
+    text-align: justify;
+}
+
+.card3 p{
+    padding: 20px;
+    margin-top: 80px;
+    text-align: justify;
+}
+.card1 a{
+    text-align: center;
+    margin-left: 105px; 
+    border-radius: 30px;
+    height: 35px; 
+    width: 115px;
+    margin-top: -7px; 
+    border: 3px solid #FF7619;
+    padding: 8px;
+    background-color: #ffffff;
+    text-decoration: none;
+    color: #243238;
+}
+
+.card2 a{
+    text-align: center;
+    margin-left: 105px; 
+    border-radius: 30px;
+    height: 35px; 
+    width: 115px;
+    margin-top: -7px; 
+    border: 3px solid #FF7619;
+    padding: 8px;
+    background-color: #ffffff;
+    text-decoration: none;
+    color: #243238;
+}
+
+.card3 a{
+    text-align: center;
+    margin-left: 105px; 
+    border-radius: 30px;
+    height: 35px; 
+    width: 115px;
+    margin-top: -7px; 
+    border: 3px solid #FF7619;
+    padding: 8px;
+    background-color: #ffffff;
+    text-decoration: none;
+    color: #243238;
+}
+
+.card1:hover{
+    background-image: linear-gradient(rgba(255,118,25, 0.8),rgba(255,118,25, 0.8)), url(donate.jpg);
+   
+}
+
+.card2:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(volunteer.png);
+    
+}
+
+.card3:hover{
+    background-image: linear-gradient(rgba(255,118,25, 0.8),rgba(255,118,25, 0.8)), url(inspiration.jpg);
+   
 }
