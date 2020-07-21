@@ -7,11 +7,8 @@ body{
 /* Scrollbar */
 ::-webkit-scrollbar{
     height: 0px;
-<<<<<<< HEAD
     width: 10px;
-=======
     width: 3.5px;
->>>>>>> refs/remotes/origin/master
 }
 ::-webkit-scrollbar-thumb{
     background-color: #FF7619;
@@ -349,12 +346,16 @@ body{
 }
 
 /* why ngo */
+.whyngo{
+    background-color: tomato;
+    position: relative;
+}
 .aboutngo{  
     display: inline-block;
     margin-top: 20px;
     margin-left: 50px;
     width:60%;
-    height: 300px;
+    height: 350px;
     /* background-color: red; */
 }
 .aboutngo h1{
@@ -369,13 +370,15 @@ body{
 }
 .latestevents{
     display: block;
-    margin-top: 10px;
-    margin-right: 50px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    /* margin-right: 50px; */
     padding-bottom: 10px;
-    float: right;
+    float: left;
     background-color: rgb(212, 209, 209);
    width: 32%;
-   height: 300px;
+   height: 350px;
 }
 .latestevents h3{
     text-align: center;
@@ -484,40 +487,43 @@ body{
     text-align: justify;
 }
 .card1 a{
+    position: absolute;
     text-align: center;
-    margin-left: 138px; 
+    margin-left: 100px; 
     border-radius: 30px;
-    height: 35px; 
+    height: 25px; 
     width: 115px;
-    margin-top: -7px; 
-    border: 3px solid #FF7619;
-    padding: 8px;
+    margin-top: -13px; 
+    border: 2px solid #FF7619;
+    padding: 6px;
     background-color: #ffffff;
     text-decoration: none;
     color: #243238;
 }
 .card2 a{
+    position: absolute;
     text-align: center;
-    margin-left: 105px; 
+    margin-left: 100px; 
     border-radius: 30px;
-    height: 35px; 
+    height: 25px; 
     width: 115px;
-    margin-top: -7px; 
-    border: 3px solid #FF7619;
-    padding: 8px;
+    margin-top: -13px; 
+    border: 2px solid #FF7619;
+    padding: 6px;
     background-color: #ffffff;
     text-decoration: none;
     color: #243238;
 }
 .card3 a{
+    position: absolute;
     text-align: center;
-    margin-left: 105px; 
+    margin-left: 100px; 
     border-radius: 30px;
-    height: 35px; 
+    height: 25px; 
     width: 115px;
-    margin-top: -7px; 
-    border: 3px solid #FF7619;
-    padding: 8px;
+    margin-top: -13px; 
+    border: 2px solid #FF7619;
+    padding: 6px;
     background-color: #ffffff;
     text-decoration: none;
     color: #243238;
@@ -533,6 +539,112 @@ body{
     background-image: linear-gradient(rgba(255,118,25, 0.8),rgba(255,118,25, 0.8)), url(inspiration.jpg);
 }
 
+/* our reach */
+.ourreach{
+    position: relative;
+    /* display: inline-block; */
+    width: 100%;
+    height: 130px;
+    padding-inline-start: 200px;
+    padding-inline-end: 150px;
+    background-image: url(img3.jpg);
+    background-attachment: fixed;
+    bottom: 20px;
+}
+.ourreach1{
+    display: inline-flex;
+    /* background-color: aquamarine; */
+    height: 130px;
+    width: 15%;
+}
+.ourreach1 .timer{
+    position: absolute;
+    
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    width: 205px;
+    /* background-color: teal; */
+    text-align: center;
+    color: #FF7619;
+    font-weight: bolder;
+}
+.ourreach1 .totalprojects{
+    position: absolute;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 23px;
+    color: #FF7619;
+    bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 204px;
+    /* background-color: violet; */
+}
+.ourreach2{
+    display: inline-flex;
+    /* background-color: red; */
+    margin-left: 150px;
+    margin-right: 150px;
+    height: 130px;
+    width: 15%;
+}
+.ourreach2 .timer{
+    position: absolute;
+    
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    width: 205px;
+    /* background-color: teal; */
+    text-align: center;
+    color: #FF7619;
+    font-weight: bolder;
+}
+.ourreach2 .totalvolunteers{
+    position: absolute;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 23px;
+    color: #FF7619;
+    bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 204px;
+    /* background-color: violet; */
+
+}
+.ourreach3{
+    display: inline-flex;
+    /* background-color: yellow; */
+    height: 130px;
+    width: 15%;
+}
+.ourreach3 .timer{
+    position: absolute;
+    
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    width: 205px;
+    /* background-color: teal; */
+    text-align: center;
+    color: #FF7619;
+    font-weight: bolder;
+}
+.ourreach3 .totalevents{
+    position: absolute;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 23px;
+    color: #FF7619;
+    bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 204px;
+    /* background-color: violet; */
+
+}
 /* Sign-up designing */
 .sign-up-area{
     position: relative;
