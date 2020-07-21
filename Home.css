@@ -7,7 +7,7 @@ body{
 /* Scrollbar */
 ::-webkit-scrollbar{
     height: 0px;
-    width: 8px;
+    width: 10px;
 }
 ::-webkit-scrollbar-thumb{
     background-color: #FF7619;
@@ -38,12 +38,13 @@ body{
     width: 60%;
     margin-left: 70%;
     height: 90px;
+    display: flex;
 }
 .phn-contact-details{
     margin: 12px 0px 10px 42%;
     width: 180px;
     display: flex;
-    /* background-color: yellow; */
+    
 }
 .phn-contact-details .icon-box, .email-contact-details .icon-box{    
     border: 1px solid rgb(231, 230, 230);
