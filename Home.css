@@ -5,7 +5,7 @@ body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
 /* Scrollbar */
@@ -261,13 +261,13 @@ body{
 .whyngo{
     /* background-color: tomato; */
     position: relative;
+    padding: 60px 100px;
 }
 .aboutngo{  
-    display: inline-block;
-    margin-top: 20px;
-    margin-left: 50px;
-    width:60%;
-    height: 350px;
+    display: block;
+    margin: 5px 0px 0px 53px;
+    width:54%;
+    height: 355px;   
     /* background-color: red; */
 }
 .aboutngo h1{
@@ -277,20 +277,23 @@ body{
     display: flex;
     padding-left: 10px;
     padding-right: 10px;
-    font-size: 22px;
-    text-align: justify;
+    font-size: 20.5px;
+    text-align: justify;    
 }
 .latestevents{
     display: block;
     position: absolute;
-    top: 10px;
-    right: 20px;
+    top: 75px;
+    padding: 1%;
+    right: 125px;
+    border: 1px solid rgb(212, 209, 209);
+    border-radius: 26px;
     /* margin-right: 50px; */
     padding-bottom: 10px;
     float: left;
     background-color: rgb(212, 209, 209);
-   width: 32%;
-   height: 350px;
+    width: 27%;
+    height: 330px;
 }
 .latestevents h3{
     text-align: center;
@@ -336,7 +339,8 @@ body{
     width: 80%;
     margin-left: 150px;
     flex-direction: column;
-    padding-bottom: 4%;
+    padding-bottom: 7.5%;
+    padding-top: 5%;
     /* background-color: yellow; */
 }
 .card1{
@@ -771,12 +775,14 @@ input[type=email]:focus, input[type=text]:focus{
 .gallery div{   
     position: absolute;
     display: flex;
+    margin-right: 38px;
+    margin-top: 12px;
     flex-flow: row wrap;
 }
-.gallery div a img{
+.gallery div img{
     width: 100px;
     height: auto;
-    padding: 5%;    
+    padding: 5px;    
 }
 .contacts{
     left: 78%;
@@ -784,14 +790,16 @@ input[type=email]:focus, input[type=text]:focus{
     top: 8%;
     width: 300px;
 }
-.contacts h2{ color: #ffffff;}
+.contacts h2{ color: #ffffff;
+    margin-left: -5px;
+}
 .con-pad{ padding-bottom: 5%;}
 .pos-1 i{
     position: absolute;
     border: 1px solid #B6B6B6;
     left: 5%;
     top: 100%;
-    padding: 3% 4%;
+    padding: 2.8% 3.6%;
     border-radius: 50%;
 }
 .pos-2 i{
