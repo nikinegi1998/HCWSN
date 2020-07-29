@@ -503,17 +503,19 @@ input[type=email]:focus, input[type=text]:focus{
 
 /* About us card design  */
 .about-us-card-area{
-    width: 68%;
-    padding: 0px 20px;
+    width: 65%;
+    padding: 30px 30px;
     margin: 5rem 0 40px 15rem;
     /* background-color: olive; */
     height: 100rem;
     position: relative;
     display: flex;
+    align-items: space-around;
     flex-flow: row wrap;
 }
-.about-us-card-1 p, .about-us-card-2 p, .about-us-card-3 p{
+[class^="about-us-card"] p{
     text-align: justify;
+    opacity: 0.8;
 }
 .about-us-card-2, .about-us-card-5{
     width: 45%;
