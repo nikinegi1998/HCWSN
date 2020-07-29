@@ -1,15 +1,17 @@
+html{
+    font-family: 'Candara','Georgia' !important;
+}
 body{
     margin: 0;
     padding: 0;
-    /* overflow-x: hidden; */
-    /* box-sizing: border-box; */
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 /* Scrollbar */
 ::-webkit-scrollbar{
     height: 0px;
     width: 10px;
-    width: 3.5px;
 }
 ::-webkit-scrollbar-thumb{
     background-color: #FF7619;
@@ -231,13 +233,14 @@ body{
     right: 1%;
 }
 .size{
-    top: 45%;
+    top: 40%;
     position: absolute;
     background-color: #FF7619;
     opacity: 0.6;
     border: hidden;
     visibility: hidden;
     padding: 5px 10px;
+    padding-top: 2px !important;
     color: #E9E9E9;
     font-size: 30px;
 }
@@ -251,7 +254,7 @@ body{
     position: absolute;
     color: #E9E9E9;
     top:38%;
-    left:21%;
+    left:25%;
     font-size: 55px;
 }
 
@@ -259,15 +262,13 @@ body{
 .whyngo{
     /* background-color: tomato; */
     position: relative;
-    display: block;
+    padding: 60px 100px;
 }
 .aboutngo{  
-    position: relative;
-    display: inline-block;
-    margin-top: 20px;
-    margin-left: 50px;
-    width:60%;
-    height: 350px;
+    display: block;
+    margin: 5px 0px 0px 53px;
+    width:54%;
+    height: 355px;   
     /* background-color: red; */
 }
 .aboutngo h1{
@@ -277,19 +278,23 @@ body{
     display: flex;
     padding-left: 10px;
     padding-right: 10px;
-    font-size: 22px;
-    text-align: justify;
+    font-size: 20.5px;
+    text-align: justify;    
 }
 .latestevents{
     display: block;
-    position: relative;
-    top: 20px;
-    right: 20px;
-    padding-bottom: 10px;
+    position: absolute;
+    top: 75px;
+    padding: 1%;
+    right: 125px;
+    border: 1px solid rgb(212, 209, 209);
+    border-radius: 26px;
+    /* margin-right: 50px; */
+    padding-bottom: 15px;
     float: right;
     background-color: rgb(212, 209, 209);
-    width: 32%;
-    height: 340px;
+    width: 27%;
+    height: 330px;
 }
 .latestevents h3{
     position: relative;
@@ -302,12 +307,16 @@ body{
     display: flex;
     /* background-color: rebeccapurple; */
     height: 80px;
+    width: 93%;
+    /* padding: 0px; */
+    /* bottom: 20px; */
+    /* margin-bottom: 30px; */
 }
 .latestevents2{
-    top: 165px;
+    top: 175px;
 }
 .latestevents3{
-    top: 260px;
+    top: 262px;
 }
 .latestevents aside{
     /* margin-top: 0px; */
@@ -323,7 +332,7 @@ body{
 .latestevents img{
     position: relative;
     padding-top: 5px;
-    padding-left: 10px;
+    padding-left: 5px;
     height: 70px;
     width: 30%;
 }
@@ -350,6 +359,129 @@ body{
     /* padding-right: 5px; */
     font-size: 12px;
 }
+
+/* cards */
+/* .cards{
+    margin-top: 50px;
+    width: 80%;
+    margin-left: 150px;
+    flex-direction: column;
+    padding-bottom: 7.5%;
+    padding-top: 5%;
+    background-color: yellow;
+}
+.card1{
+    display: inline-block;
+    height: 250px;
+    width: 30%;
+    cursor: pointer;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(donate.jpg);
+    background-size: contain;
+    color: #ffffff;
+}
+.card2{
+    display: inline-block;
+    height: 250px;
+    width: 30%;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-image: linear-gradient(rgba(255,118,25, 0.7),rgba(255,118,25, 0.7)), url(volunteer.png); 
+    background-size: contain;
+    color: #ffffff;
+}
+.card3{
+    cursor: pointer;
+    display: inline-block;
+    height: 250px;
+    width: 30%;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(inspiration.jpg);
+    background-size: contain;
+    color: #ffffff;
+}
+.card1 h3{
+    font-weight: bolder;
+    text-align: center;
+    font-size: 24px;
+}
+.card2 h3{
+    font-weight: bolder;
+    font-size: 24px;
+    text-align: center;
+}
+.card3 h3{
+    font-weight: bolder;
+    font-size: 24px;
+    text-align: center;
+}
+.card1 p{
+    padding: 20px;
+    margin-top: 80px;
+    text-align: justify;
+}
+.card2 p{
+    padding: 20px;
+    margin-top: 80px;
+    text-align: justify;
+}
+.card3 p{
+    padding: 20px;
+    margin-top: 80px;
+    text-align: justify;
+}
+.card1 a{
+    position: absolute;
+    text-align: center;
+    margin-left: 100px; 
+    border-radius: 30px;
+    height: 25px; 
+    width: 115px;
+    margin-top: -13px; 
+    border: 2px solid #FF7619;
+    padding: 6px;
+    background-color: #ffffff;
+    text-decoration: none;
+    color: #243238;
+}
+.card2 a{
+    position: absolute;
+    text-align: center;
+    margin-left: 100px; 
+    border-radius: 30px;
+    height: 25px; 
+    width: 115px;
+    margin-top: -13px; 
+    border: 2px solid #FF7619;
+    padding: 6px;
+    background-color: #ffffff;
+    text-decoration: none;
+    color: #243238;
+}
+.card3 a{
+    position: absolute;
+    text-align: center;
+    margin-left: 100px; 
+    border-radius: 30px;
+    height: 25px; 
+    width: 115px;
+    margin-top: -13px; 
+    border: 2px solid #FF7619;
+    padding: 6px;
+    background-color: #ffffff;
+    text-decoration: none;
+    color: #243238;
+}
+.card1:hover{
+    background-image: linear-gradient(rgba(255,118,25, 0.8),rgba(255,118,25, 0.8)), url(donate.jpg);   
+}
+.card2:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(volunteer.png);
+    
+}
+.card3:hover{
+    background-image: linear-gradient(rgba(255,118,25, 0.8),rgba(255,118,25, 0.8)), url(inspiration.jpg);
+} */
+
 /* our reach */
 .ourreach{
     position: relative;
@@ -439,12 +571,11 @@ body{
     /* background-color: yellow; */
 }
 .cardselements{
-    display: inline-flex;
+    display: flex;
     width:20%;
-    /* height: 280px; */
     height: 280px;
     /* background-color: red; */
-    /* float: right; */
+    float: left;
     margin-left: 130px;
     /* -moz-box-align: center;
     -webkit-box-align: center; */
@@ -455,6 +586,7 @@ body{
     display: block;
     height: 250px;
     width: 100%;
+    /* top: 50px; */
     /* margin-left: 30px; */
     cursor: pointer;
     background-size: contain;
@@ -475,10 +607,9 @@ body{
     font-size: 24px;
 }
 .card1 p, .card2 p, .card3 p{
-    position: relative;
     padding: 20px;
     display: flex;
-    margin-top: 80px;
+    margin-top: 60px;
     text-align: justify;
 }
 
@@ -490,7 +621,7 @@ body{
     border-radius: 30px;
     height: 25px; 
     width: 115px;
-    margin-top: -23px; 
+    margin-top: -15px; 
     border: 2px solid #FF7619;
     padding-top: 6px;
     background-color: #ffffff;
@@ -590,18 +721,21 @@ body{
 .team-members-info-1 a:hover .fa-instagram, .team-members-info-2 a:hover .fa-instagram, .team-members-info-3 a:hover .fa-instagram{
     background-color: #ffffff;
     color: #e84393;
+    transition: .5s ease;
 }
 .team-members-info-1 a:hover .fa-twitter, .team-members-info-2 a:hover .fa-twitter, .team-members-info-3 a:hover .fa-twitter{
     background-color: #ffffff;
     color: #0097e6;
+    transition: .5s ease;
 }
 .team-members-info-1 a:hover .fa-facebook, .team-members-info-2 a:hover .fa-facebook, .team-members-info-3 a:hover .fa-facebook{
     background-color: #ffffff;
-    color: rgba(46, 46, 196, 0.979);
+    color: rgba(47, 47, 126, 0.979);
+    transition: .5s ease;
 }
 
 /* Sign-up designing */
-.sign-up-area{
+/* .sign-up-area{
     position: relative;
     height: 120px;
     bottom: 10%;
@@ -657,73 +791,111 @@ body{
 }
 input[type=email]:focus, input[type=text]:focus{
     background-color: rgb(161, 161, 161);
-}
+} */
 
 /* footer design */
 .footer{
     position: relative;
     top: 0px;
     background-color: #243238;
-    height: 350px;
+    height: 340px;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
 }
-.footer-menu{
+/* .footer-menu{
     position: absolute;
-    left: 10%;
+    left: 5%;
     top: 8%;
-}
+} */
 .footer-items{
     position: absolute;
-    left: 28%;
+    left: 1%;
     top: 8%;
 }
-.footer-menu-head, .footer-items-head{ color: #ffffff;font-size: 26px; padding-left: 34%;}
-.footer-menu ul li a, .footer-items ul li a{
+/* .footer-menu-head{
+    color: #B6B6B6;
+    padding-top: 30px;
+    margin-left: 0px;
+}
+.footer-menu p{
+    color: #B6B6B6;
+    margin-left: 0px;
+} */
+.footer-items-head{ 
+    color: #ffffff;
+    font-size: 24px; 
+    margin-left: 110px;
+}
+.footer-items ul li a{
     text-decoration: none;
     color: #B6B6B6;
-    line-height: 35px;
-    font-size: 19px;
+    line-height: 39px;
+    font-size: 17px;
     text-align: left;
 }
-.footer-menu ul li a:hover, .footer-items ul li a:hover{
+.footer-items ul li a:hover{
     color: #FF7619;
     opacity: 0.9;
-    transition: color .8s ease;
+    transition: color .7s ease;
 }
-.footer-menu ul li, .footer-items ul li{list-style: none;}
-.gallery{
+.footer-pos-1{
+    /* background-color: red; */
+    top: 70%;
     position: absolute;
-    left: 48%;
-    top: 8%;
-    width: 280px;
+    margin-left: 0px;
 }
-.gallery h2{left: 20%; color: #ffffff;}
+.footer-pos-2{
+    top: 70%;
+    /* word-break: normal; */
+    position: absolute;
+    margin-left: 85%;
+    /* width: 10px; */
+}
+.footer-items ul li{list-style: none;}
+.gallery{
+    /* background-color: red; */
+    position: absolute;
+    left: 25%;
+    top: 8%;
+    width: 340px;
+}
+.gallery h2{left: 20%; text-align: center; color: #ffffff;}
 .gallery div{   
+    /* background-color: yellowgreen; */
     position: absolute;
     display: flex;
+    margin-right: 5px;
+    margin-top: 12px;
     flex-flow: row wrap;
 }
-.gallery div a img{
-    width: 80px;
+.gallery div img{
+    width: 100px;
     height: auto;
-    padding: 5%;    
+    padding: 5px;    
 }
 .contacts{
-    left: 75%;
+    left: 51%;
     position: absolute;
     top: 8%;
-    width: 300px;
+    width: 180px;
+    /* background-color: red; */
 }
-.contacts h2{ color: #ffffff;}
-.con-pad{ padding-bottom: 5%;}
+.contacts h2{ 
+    text-align: center;
+    color: #ffffff;
+    margin-left: -5px;
+}
+.con-pad{ 
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
 .pos-1 i{
     position: absolute;
     border: 1px solid #B6B6B6;
     left: 5%;
     top: 100%;
-    padding: 3% 4%;
+    padding: 2.8% 3.6%;
     border-radius: 50%;
 }
 .pos-2 i{
