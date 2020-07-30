@@ -803,29 +803,16 @@ input[type=email]:focus, input[type=text]:focus{
     flex-wrap: nowrap;
     flex-direction: row;
 }
-/* .footer-menu{
-    position: absolute;
-    left: 5%;
-    top: 8%;
-} */
 .footer-items{
     position: absolute;
-    left: 1%;
+    left: 3%;
     top: 8%;
 }
-/* .footer-menu-head{
-    color: #B6B6B6;
-    padding-top: 30px;
-    margin-left: 0px;
-}
-.footer-menu p{
-    color: #B6B6B6;
-    margin-left: 0px;
-} */
 .footer-items-head{ 
     color: #ffffff;
     font-size: 24px; 
     margin-left: 110px;
+    padding-bottom: 10%;
 }
 .footer-items ul li a{
     text-decoration: none;
@@ -856,9 +843,9 @@ input[type=email]:focus, input[type=text]:focus{
 .gallery{
     /* background-color: red; */
     position: absolute;
-    left: 25%;
+    left: 29%;
     top: 8%;
-    width: 340px;
+    width: 280px;
 }
 .gallery h2{left: 20%; text-align: center; color: #ffffff;}
 .gallery div{   
@@ -870,12 +857,12 @@ input[type=email]:focus, input[type=text]:focus{
     flex-flow: row wrap;
 }
 .gallery div img{
-    width: 100px;
-    height: auto;
+    width: 80px;
+    height: 80px;
     padding: 5px;    
 }
 .contacts{
-    left: 51%;
+    left: 55%;
     position: absolute;
     top: 8%;
     width: 180px;
@@ -884,7 +871,7 @@ input[type=email]:focus, input[type=text]:focus{
 .contacts h2{ 
     text-align: center;
     color: #ffffff;
-    margin-left: -5px;
+    /* margin-left: -5px; */
 }
 .con-pad{ 
     padding-bottom: 5%;
@@ -931,7 +918,50 @@ input[type=email]:focus, input[type=text]:focus{
 .fa-twitter{
     color: #B6B6B6;
 }
+/* contact us */
+.cont{
+    /* background-color: red; */
+    width: 21%;
+    left: 72%;
+    position: absolute;
+    top: 8%;
+}
+.cont h2{
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 3%;
 
+}
+.cont>input{
+    font-size: 17px;
+    width: 95%;
+    padding: 1%;
+    margin-bottom: 2%;
+    background-color: #243238;
+    border: 1px solid #14181b;
+    border-radius: 5px;
+    outline: none;
+}
+
+.cont textarea{
+    font-size: 17px;
+    width: 95%;
+    padding: 1%;
+    margin-bottom: 2%;
+    resize: none;
+    border-radius: 5px;
+    background-color: #243238;
+    outline: none;
+    border: 1px solid #14181b;
+}
+.cont input:focus, textarea:focus{
+    border: 1px solid #B6B6B6;
+}
+input[type=submit]{
+    text-align: center;
+    background-color: #FF7619;
+    border: #FF7619;
+}
 /* copyright design */
 .copyright{
     height: 50px;
