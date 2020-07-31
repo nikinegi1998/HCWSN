@@ -1,13 +1,12 @@
 html{
-    font-family: 'Candara','Georgia' !important;
-    /* font-family: 'Raleway', sans-serif !important; */
     background-color: #ffffff;
+    font-family: 'Candara','Georgia' !important;
 }
 body{
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 /* Scrollbar */
@@ -196,7 +195,7 @@ body{
     color: #FF7619;
 }
 
-/*  About Us Image */
+/*  Contact Us Image */
 .images-setting{
     height: 180px;
     margin-top: -22px;
@@ -212,7 +211,7 @@ body{
     color: #202a30;
     text-transform: uppercase;
     top:25%;
-    left:41.5%;
+    left:41.9%;
     font-size: 40px;
 }
 .images-setting p a{
@@ -222,68 +221,9 @@ body{
 .images-setting p{
     position: absolute;
     bottom: 10px;
-    left: 43.5%;
+    left: 45.5%;
     font-size: 17px;
 }
-
-/* Sign-up designing */
-/* .sign-up-area{
-    position: relative;
-    height: 120px;
-    bottom: 10%;
-    background-color: #FF7619;
-}
-.btn-subscribe{
-    position: absolute;
-    right: 6%;
-    bottom: 33%;
-    border-radius: 25px;
-    border: none;
-    cursor: pointer;
-    padding: 12px 20px;
-    font-weight: bold;
-    background-color: #E9E9E9;
-    color: #FF7619;
-    transition: color .5s ease;
-    transition: background-color .5s ease;
-}
-.btn-subscribe:hover{
-    color: #E9E9E9;
-    background-color: #243238;
-}
-.btn-subscribe:active{
-    transform: translateY(3px);
-}
-.sign-up-para{
-    color: #ffffff;
-    opacity: 0.8;
-    font-family: sans-serif;
-    position: absolute;    
-}
-.pos-1{
-    top: 1%;
-    left: 6%;
-}
-.pos-2{
-    top: 43%;
-    left: 6%;
-    text-align: left;
-}
-.sign-up-details{
-    position: absolute;
-    top: 38%;
-    opacity: 0.8;
-    right: 18%;
-}
-#email, #name{
-    border: #ffffff;
-    border-radius: 10px;
-    font-size: 15px;
-    padding: 5px;
-}
-input[type=email]:focus, input[type=text]:focus{
-    background-color: rgb(161, 161, 161);
-} */
 
 /* footer design */
 .footer{
@@ -435,7 +375,6 @@ input[type=email]:focus, input[type=text]:focus{
     border-radius: 5px;
     outline: none;
 }
-
 .cont textarea{
     font-size: 17px;
     width: 95%;
@@ -483,93 +422,155 @@ input[type=submit]{
 }
 .cpr-link:hover{ background-size: 100% 1.5px, auto;}
 
-/* Who we are designing */
-.about{
-    height: 60rem;
-    padding: 4% 20%;
-    line-height: 28px;
-    box-sizing: border-box;
+/* Map location */
+ section .map{
+    height: 40rem;
+    /* background-color: burlywood; */
+    position: relative;
+}
+section .map p:first-child{
+    text-align: center;
+    top: 15px;
     /* background-color: crimson; */
-}
-.about-area{
-    /* background-color: chocolate; */
-    width: 85%;
-    padding: 40px;
-    display: block;
-}
-.about h1{
+    position: absolute;
+    padding: 8px;
+    left: 9%;
     opacity: 0.6;
+    font-size: 22px;
 }
-.about p{
-    text-align: justify;
-    opacity: 0.6;
-    /* background-color: cyan; */
-    font-size: 19px;
-}
-
-/* Emergency call */
-.eme-call{
-    height: 300px;
-    margin-top: 0px;
+section .map p:last-child{
+    position: absolute;
+    top: 23%;
     width: 100%;
-    background: #243238;
-    background-image: linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)), url("temp.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    /* box-sizing: border-box; */
-}
-.eme-info p:first-child{
-    /* position: absolute; */
-    color: #202a30;
-    text-transform: uppercase;
-    /* top:25%;
-    left:20%; */
-    display: block;
-    /* background-color: chartreuse; */
-    text-align: center;
-    font-size: 35px;
-}
-.eme-info p{
-    margin: 2rem;
-}
-.eme-info::before{
-    padding-top: 2%;
-    content: "Did not find your answer?";
-    color: #ffffff;
-    display: block;
-    text-align: center;
-    font-weight: bold;
-    font-size: 25px;
-    /* background-color: cadetblue; */
+    /* border-top: 4px solid #262F36; */
 }
 
-/* About us card design  */
-.about-us-card-area{
-    width: 68%;
-    padding: 25px 20px;
-    margin: 5rem 0 40px 12rem;
-    /* background-color: olive; */
-    height: 150rem;
-    position: relative;
+/* Contact info design */
+.contact-us{
     display: flex;
-    align-items: space-around;
-    flex-flow: row wrap;
+    flex-direction: row;
+    width: 100%;
 }
-.about-us-card-area > p{
-    text-align: justify;
-    opacity: 0.8;
-}  
-.about-us-card-area > div{
-    width: 43%;
+.contact-details-area{
+    /* background-color: fuchsia; */
+    width: 50%;
     box-sizing: border-box;
-    /* background-color: greenyellow; */
-    height: 45rem;
-    /* border: 1px solid rgb(206, 204, 204); */
-    box-shadow: 1px 1px 8px rgb(90, 88, 88);
-    padding: 25px;
-    text-align: justify;
-    background: url("donate.jpg");
-    margin-left: 4.5rem;
+    position: relative;
+    padding: 5%;
+}
+.contact-heading{
+    padding: 1% 0 10% 1%;
+    width: 50%;
+    font-size: 20px;
+    height: 5rem;  
+    margin: 0 0 0 9rem; 
+    /* background-color: gold; */
+}
+.contact-details{
+    display: flex;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    height: 150px;
+    /* background-color: darkgoldenrod; */
+    flex-flow: column wrap;
+}
+.contact-details h2{
+    line-height: 0px;
+}
+.contact-details p{
+    opacity: 0.8;
+    font-size: 17px;
+}
+.contact-div{
+    display: flex;
+    flex-flow: row wrap;
+    width: 60%;
+    box-sizing: border-box;
+    margin: 0 0 0 9rem;
+    /* background-color: darkcyan; */
+}
+.contact-div .fa-envelope{
+    background-color: #FF7619;
+    color: #ffffff;
+    height: 52px;
+    margin: 3px 12px;
+    padding: 5%;
+    border-radius: 50%;
+}
+.contact-div .fa-map-marker{
+    background-color: #FF7619;
+    color: #ffffff;
+    height: 52px;
+    margin: 7px 12px;
+    padding: 3% 6.5% 7% 6.5%;
+    border-radius: 50%;
+}
+.contact-div .fa-phone{
+    background-color: #FF7619;
+    color: #ffffff;
+    height: 52px;
+    margin: 5px 11px 5px 12px;
+    padding: 5% 6.5%;
+    border-radius: 50%;
+}
+
+.helpdesk{
+    display: flex;
+    height: 40rem;
+    margin: 80px 0px;
+    /* background-color: forestgreen; */
+    flex-direction: row;
+    padding: 30px 70px;
+    box-shadow: 1px 1px 8px gray;
+}
+.helpdesk h1{
+    font-size: 42px;
+}
+.helpdesk p{
+    opacity: 0.6;
+    font-size: 18px;
+}
+.helpdesk form{
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+}
+.helpdesk form >input{
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid rgb(196, 193, 193);
+    border-radius: 20px;
+    margin-bottom: 10px;
+    outline: none;
+}
+.helpdesk form >input:focus{
+    background-color: rgb(207, 203, 203);
+}
+.helpdesk form>textarea{
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 10px;
+    height: 150px;
+    border: 1px solid rgb(196, 193, 193);
+    resize: none;
+    outline: none;
+    margin-bottom: 20px;
+}
+.helpdesk form>textarea:focus{
+    background-color: rgb(207, 203, 203);
+}
+.helpdesk form div{
+    padding: 10px;
+    text-align: right;
+}
+.helpdesk form div input:first-child{
+    width: 6rem;
+    height: 3rem;    
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
 }
 
