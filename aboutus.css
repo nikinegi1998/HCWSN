@@ -454,8 +454,15 @@ input[type=submit]{
     text-align: center;
     background-color: #FF7619;
     border: #FF7619;
+    width: 50%;
+    height: 30px;
+    font-size: 17px;
+    padding: 1%;
+    border-radius: 5px;
 }
-
+.submit-button{
+    text-align: center;
+}
 /* copyright design */
 .copyright{
     height: 50px;
@@ -549,7 +556,7 @@ input[type=submit]{
     width: 68%;
     padding: 25px 20px;
     margin: 5rem 0 40px 12rem;
-    /* background-color: olive; */
+    background-color: olive;
     height: 150rem;
     position: relative;
     display: flex;

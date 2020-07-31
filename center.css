@@ -314,7 +314,7 @@ body{
     border: 1px solid #B6B6B6;
     left: 5%;
     top: 100%;
-    padding: 2.8% 3.6%;
+    padding: 3.6%;
     border-radius: 50%;
 }
 .pos-2 i{
@@ -393,6 +393,14 @@ input[type=submit]{
     text-align: center;
     background-color: #FF7619;
     border: #FF7619;
+    width: 50%;
+    height: 30px;
+    font-size: 17px;
+    padding: 1%;
+    border-radius: 5px;
+}
+.submit-button{
+    text-align: center;
 }
 /* copyright design */
 .copyright{
