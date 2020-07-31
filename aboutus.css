@@ -148,12 +148,13 @@ body{
     opacity: 0;
     transition: opacity 0.7s ease;
     color: #ffffff;
-    /* box-shadow: 3px 3px 5px grey,-3px 3px 5px grey,3px 3px 5px grey,-3px 0px 5px grey,3px 0px 5px grey; */
+    box-shadow: 2px 2px 5px grey,-2px 2px 5px grey,2px 2px 5px grey,-2px 0px 5px grey,2px 0px 5px grey;
 }
 .menu-items-sub-items ul li{
     width: 200px;   
     line-height: 40px;
-    display: none;    
+    display: none;
+    border-bottom: 1px solid rgb(199, 191, 191);    
 }
 .menu-items-sub-items ul li a{ 
     display: block;
@@ -354,7 +355,7 @@ input[type=email]:focus, input[type=text]:focus{
     padding: 5px;    
 }
 .contacts{
-    left: 55%;
+    left: 53%;
     position: absolute;
     top: 8%;
     width: 180px;
@@ -366,21 +367,31 @@ input[type=email]:focus, input[type=text]:focus{
     /* margin-left: -5px; */
 }
 .con-pad{ 
-    padding-bottom: 5%;
-    padding-top: 5%;
+    padding-bottom: 6%;
+    padding-top: 6%;
+    font-size: 17px;
+}
+.con-pad>i{
+    position: absolute;
+    /* margin-top: 10px; */
+    padding-top: 4px;
+    /* background-color: #0097e6; */
+}
+.con-pad>span{
+    padding-left: 19px;
 }
 .pos-1 i{
     position: absolute;
     border: 1px solid #B6B6B6;
-    left: 5%;
+    left: 16%;
     top: 100%;
-    padding: 2.8% 3.6%;
+    padding: 2.8% 4%;
     border-radius: 50%;
 }
 .pos-2 i{
     position: absolute;
     border: 1px solid #B6B6B6;
-    left: 25%;
+    left: 35%;
     top: 100%;
     padding: 2.8%;
     border-radius: 50%;
@@ -389,7 +400,7 @@ input[type=email]:focus, input[type=text]:focus{
     position: absolute;
     top: 100%;
     border: 1px solid #B6B6B6;
-    left: 45%;
+    left: 55%;
     padding: 2.5%;
     border-radius: 50%;
 }
@@ -556,7 +567,7 @@ input[type=submit]{
     width: 68%;
     padding: 25px 20px;
     margin: 5rem 0 40px 12rem;
-    background-color: olive;
+    /* background-color: olive; */
     height: 150rem;
     position: relative;
     display: flex;
@@ -570,13 +581,13 @@ input[type=submit]{
 .about-us-card-area > div{
     width: 43%;
     box-sizing: border-box;
-    /* background-color: greenyellow; */
-    height: 45rem;
+    background-color: greenyellow;
+    height: 46rem;
     /* border: 1px solid rgb(206, 204, 204); */
     box-shadow: 1px 1px 8px rgb(90, 88, 88);
-    padding: 25px;
+    padding: 23px;
     text-align: justify;
     background: url("donate.jpg");
-    margin-left: 4.5rem;
+    margin-left: 4rem;
 }
 
