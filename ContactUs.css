@@ -179,7 +179,7 @@ body{
     margin-left: 75%;
     position: relative;
     margin-top: 0px;
-    top: 0;
+    top: 0;    
 }
 .btn-1{
     background-color: #FF7619;
@@ -189,12 +189,14 @@ body{
     text-align: center;
     font-size: 15px;
     padding: 25px;
+    outline: none;
     cursor: pointer;
 }
 .btn-1:hover{
     background-color: #E9E9E9;
     color: #FF7619;
 }
+
 /*  Contact Us Image */
 .images-setting{
     height: 180px;
@@ -531,7 +533,6 @@ section .map p:last-child{
     padding: 5% 6.5%;
     border-radius: 50%;
 }
-
 .helpdesk{
     display: flex;
     height: 40rem;
@@ -582,12 +583,15 @@ section .map p:last-child{
     text-align: right;
 }
 .helpdesk form div input:first-child{
-    width: 6rem;
-    height: 3rem;    
+    width: 5.5rem;
+    height: 2.3rem;    
     font-size: 20px;
     color: #ffffff;
     cursor: pointer;
     outline: none;
     border-radius: 5px;
 }
-
+.helpdesk form div input:first-child:hover{
+    transition: .5s ease;
+    transform: scale(1.1, 1.1);
+}

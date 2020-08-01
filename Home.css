@@ -133,8 +133,10 @@ body{
 }
 .menu-items ul li ul li{
     /* background-color: cadetblue; */
-    background-color: #ffffff;
-    color: #262F36;
+    /* background-color: #ffffff; */
+    background-color: #262F36;
+    /* color: #262F36; */
+    color: #ffffff;
     float: none;
     text-decoration: none;
     padding: 0px;
@@ -146,14 +148,14 @@ body{
     padding: 0px;
     opacity: 0;
     transition: opacity 0.7s ease;
-    color: #ffffff;
-    box-shadow: 2px 2px 5px grey,-2px 2px 5px grey,2px 2px 5px grey,-2px 0px 5px grey,2px 0px 5px grey;
+    /* color: #ffffff; */
+    /* box-shadow: 2px 2px 5px grey,-2px 2px 5px grey,2px 2px 5px grey,-2px 0px 5px grey,2px 0px 5px grey; */
 }
 .menu-items-sub-items ul li{
     width: 200px;   
     line-height: 40px;
     display: none;
-    border-bottom: 1px solid rgb(199, 191, 191);    
+    /* border-top: 1px solid rgb(199, 191, 191);     */
 }
 .menu-items-sub-items ul li a{ 
     display: block;
@@ -161,8 +163,9 @@ body{
     padding: 0px;
     padding-left: 7px;
     top: 0px;
+    color: #ffffff;
     width: 170px;
-    color: #262F36;
+    /* color: #262F36; */
 }
 .menu-items-sub-items ul li a:hover{
     background-color: #FF7619;
@@ -189,6 +192,7 @@ body{
     text-align: center;
     font-size: 15px;
     padding: 25px;
+    outline: none;
     cursor: pointer;
 }
 .btn-1:hover{
@@ -209,19 +213,22 @@ body{
 }
 @keyframes slide{
     0%{
-        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("img6.png");
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("img4.jpeg");
+    }
+    20%{
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("img4.jpeg");
     }    
-    25%{
-        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("img3.jpg");
+    45%{
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("img2.jpeg");
     }
-    50%{
-        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("img2.jpg");
+    60%{
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("img5.jpeg");
     }
-    75%{
-        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("img1.jpg");
+    80%{
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("img1.jpeg");
     }
     100%{
-        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("img3.jpg");
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("img3.jpeg");
     }
 }
 
@@ -308,9 +315,6 @@ body{
     /* background-color: rebeccapurple; */
     height: 80px;
     width: 93%;
-    /* padding: 0px; */
-    /* bottom: 20px; */
-    /* margin-bottom: 30px; */
 }
 .latestevents2{
     top: 175px;
@@ -363,14 +367,15 @@ body{
 /* our reach */
 .ourreach{
     position: relative;
-    /* display: inline-block; */
     /* background-color: hotpink; */
     max-width: 100%;
-    height: 250px;
+    height: 300px;
     padding-inline-start: 180px;
     padding-inline-end: 150px;
-    background-image: url(img3.jpg);
+    background: linear-gradient(rgba(255,255,255,0.25),rgba(255,255,255,0.25)),url(img1.jpeg);
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     top: 20px;
 }
 .ourreach1, .ourreach3{
@@ -446,6 +451,7 @@ body{
     margin-left: 0px;
     flex-flow: row nowrap;
     padding-bottom: 4%;
+    padding: 7% 4%;
     /* background-color: yellow; */
 }
 .cardselements{
@@ -459,7 +465,6 @@ body{
     /* -moz-box-align: center;
     -webkit-box-align: center; */
 }
-
 .card1, .card2, .card3{
     position: relative;
     display: block;
@@ -620,65 +625,6 @@ body{
     color: rgba(47, 47, 126, 0.979);
     transition: .5s ease;
 }
-
-/* Sign-up designing */
-/* .sign-up-area{
-    position: relative;
-    height: 120px;
-    bottom: 10%;
-    background-color: #FF7619;
-}
-.btn-subscribe{
-    position: absolute;
-    right: 6%;
-    bottom: 33%;
-    border-radius: 25px;
-    border: none;
-    cursor: pointer;
-    padding: 12px 20px;
-    font-weight: bold;
-    background-color: #E9E9E9;
-    color: #FF7619;
-    transition: color .5s ease;
-    transition: background-color .5s ease;
-}
-.btn-subscribe:hover{
-    color: #E9E9E9;
-    background-color: #243238;
-}
-.btn-subscribe:active{
-    transform: translateY(3px);
-}
-.sign-up-para{
-    color: #ffffff;
-    opacity: 0.8;
-    font-family: sans-serif;
-    position: absolute;    
-}
-.pos-1{
-    top: 1%;
-    left: 6%;
-}
-.pos-2{
-    top: 43%;
-    left: 6%;
-    text-align: left;
-}
-.sign-up-details{
-    position: absolute;
-    top: 38%;
-    opacity: 0.8;
-    right: 18%;
-}
-#email, #name{
-    border: #ffffff;
-    border-radius: 10px;
-    font-size: 15px;
-    padding: 5px;
-}
-input[type=email]:focus, input[type=text]:focus{
-    background-color: rgb(161, 161, 161);
-} */
 
 /* footer design */
 .footer{
