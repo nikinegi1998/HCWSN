@@ -364,135 +364,12 @@ body{
     font-size: 12px;
 }
 
-/* cards */
-/* .cards{
-    margin-top: 50px;
-    width: 80%;
-    margin-left: 150px;
-    flex-direction: column;
-    padding-bottom: 7.5%;
-    padding-top: 5%;
-    background-color: yellow;
-}
-.card1{
-    display: inline-block;
-    height: 250px;
-    width: 30%;
-    cursor: pointer;
-    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(donate.jpg);
-    background-size: contain;
-    color: #ffffff;
-}
-.card2{
-    display: inline-block;
-    height: 250px;
-    width: 30%;
-    cursor: pointer;
-    margin-left: 50px;
-    margin-right: 50px;
-    background-image: linear-gradient(rgba(255,118,25, 0.7),rgba(255,118,25, 0.7)), url(volunteer.png); 
-    background-size: contain;
-    color: #ffffff;
-}
-.card3{
-    cursor: pointer;
-    display: inline-block;
-    height: 250px;
-    width: 30%;
-    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(inspiration.jpg);
-    background-size: contain;
-    color: #ffffff;
-}
-.card1 h3{
-    font-weight: bolder;
-    text-align: center;
-    font-size: 24px;
-}
-.card2 h3{
-    font-weight: bolder;
-    font-size: 24px;
-    text-align: center;
-}
-.card3 h3{
-    font-weight: bolder;
-    font-size: 24px;
-    text-align: center;
-}
-.card1 p{
-    padding: 20px;
-    margin-top: 80px;
-    text-align: justify;
-}
-.card2 p{
-    padding: 20px;
-    margin-top: 80px;
-    text-align: justify;
-}
-.card3 p{
-    padding: 20px;
-    margin-top: 80px;
-    text-align: justify;
-}
-.card1 a{
-    position: absolute;
-    text-align: center;
-    margin-left: 100px; 
-    border-radius: 30px;
-    height: 25px; 
-    width: 115px;
-    margin-top: -13px; 
-    border: 2px solid #FF7619;
-    padding: 6px;
-    background-color: #ffffff;
-    text-decoration: none;
-    color: #243238;
-}
-.card2 a{
-    position: absolute;
-    text-align: center;
-    margin-left: 100px; 
-    border-radius: 30px;
-    height: 25px; 
-    width: 115px;
-    margin-top: -13px; 
-    border: 2px solid #FF7619;
-    padding: 6px;
-    background-color: #ffffff;
-    text-decoration: none;
-    color: #243238;
-}
-.card3 a{
-    position: absolute;
-    text-align: center;
-    margin-left: 100px; 
-    border-radius: 30px;
-    height: 25px; 
-    width: 115px;
-    margin-top: -13px; 
-    border: 2px solid #FF7619;
-    padding: 6px;
-    background-color: #ffffff;
-    text-decoration: none;
-    color: #243238;
-}
-.card1:hover{
-    background-image: linear-gradient(rgba(255,118,25, 0.8),rgba(255,118,25, 0.8)), url(donate.jpg);   
-}
-.card2:hover{
-    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(volunteer.png);
-    
-}
-.card3:hover{
-    background-image: linear-gradient(rgba(255,118,25, 0.8),rgba(255,118,25, 0.8)), url(inspiration.jpg);
-} */
-
 /* our reach */
 .ourreach{
     position: relative;
-    /* display: inline-block; */
     /* background-color: hotpink; */
     max-width: 100%;
-    height: 250px;
+    height: 300px;
     padding-inline-start: 180px;
     padding-inline-end: 150px;
     background: linear-gradient(rgba(255,255,255,0.25),rgba(255,255,255,0.25)),url(img1.jpeg);
@@ -568,12 +445,13 @@ body{
 
 /* cards */
 .cards{
-    display: inline-block;
+    display: flex;
     margin-top: 50px;
     width: 100%;
     margin-left: 0px;
-    flex-direction: column;
+    flex-flow: row nowrap;
     padding-bottom: 4%;
+    padding: 7% 4%;
     /* background-color: yellow; */
 }
 .cardselements{
@@ -581,8 +459,9 @@ body{
     width:20%;
     height: 280px;
     /* background-color: red; */
-    float: left;
+    /* float: left; */
     margin-left: 130px;
+    /* text-align: center; */
     /* -moz-box-align: center;
     -webkit-box-align: center; */
 }
@@ -596,6 +475,7 @@ body{
     cursor: pointer;
     background-size: contain;
     color: #ffffff;
+    background-color: yellowgreen;
 }
 .card1{
     background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(donate.jpg);
@@ -619,22 +499,29 @@ body{
 }
 
 .card1 a, .card2 a, .card3 a{
-    position: absolute;
-    /* box-sizing: content-box; */
+    position: relative;
+    /* box-sizing: border-box; */
     text-align: center;
-    margin-left: 75px; 
     border-radius: 30px;
-    height: 25px; 
-    width: 115px;
-    margin-top: -15px; 
     border: 2px solid #FF7619;
-    padding-top: 6px;
+    padding: 7px;
     background-color: #ffffff;
     text-decoration: none;
     color: #243238;
-    -moz-box-align: center;
-    -webkit-box-align: center;
-    /* margin-inline-start: 75px; */
+}
+.readmore{
+   /* background-color: rgb(207, 146, 33); */
+   box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    position: relative;
+    top: -5px;
+} 
+.readmore a:hover{
+    background-color: #FF7619;
+    color: #FFFFFF;
+    transition: all .6s ease;
 }
 .card1:hover{
     background-image: linear-gradient(rgba(255,118,25, 0.8),rgba(255,118,25, 0.8)), url(donate.jpg);   
@@ -739,65 +626,6 @@ body{
     transition: .5s ease;
 }
 
-/* Sign-up designing */
-/* .sign-up-area{
-    position: relative;
-    height: 120px;
-    bottom: 10%;
-    background-color: #FF7619;
-}
-.btn-subscribe{
-    position: absolute;
-    right: 6%;
-    bottom: 33%;
-    border-radius: 25px;
-    border: none;
-    cursor: pointer;
-    padding: 12px 20px;
-    font-weight: bold;
-    background-color: #E9E9E9;
-    color: #FF7619;
-    transition: color .5s ease;
-    transition: background-color .5s ease;
-}
-.btn-subscribe:hover{
-    color: #E9E9E9;
-    background-color: #243238;
-}
-.btn-subscribe:active{
-    transform: translateY(3px);
-}
-.sign-up-para{
-    color: #ffffff;
-    opacity: 0.8;
-    font-family: sans-serif;
-    position: absolute;    
-}
-.pos-1{
-    top: 1%;
-    left: 6%;
-}
-.pos-2{
-    top: 43%;
-    left: 6%;
-    text-align: left;
-}
-.sign-up-details{
-    position: absolute;
-    top: 38%;
-    opacity: 0.8;
-    right: 18%;
-}
-#email, #name{
-    border: #ffffff;
-    border-radius: 10px;
-    font-size: 15px;
-    padding: 5px;
-}
-input[type=email]:focus, input[type=text]:focus{
-    background-color: rgb(161, 161, 161);
-} */
-
 /* footer design */
 .footer{
     position: relative;
@@ -867,7 +695,7 @@ input[type=email]:focus, input[type=text]:focus{
     padding: 5px;    
 }
 .contacts{
-    left: 55%;
+    left: 53%;
     position: absolute;
     top: 8%;
     width: 180px;
@@ -879,21 +707,31 @@ input[type=email]:focus, input[type=text]:focus{
     /* margin-left: -5px; */
 }
 .con-pad{ 
-    padding-bottom: 5%;
-    padding-top: 5%;
+    padding-bottom: 6%;
+    padding-top: 6%;
+    font-size: 17px;
+}
+.con-pad>i{
+    position: absolute;
+    /* margin-top: 10px; */
+    padding-top: 4px;
+    /* background-color: #0097e6; */
+}
+.con-pad>span{
+    padding-left: 19px;
 }
 .pos-1 i{
     position: absolute;
     border: 1px solid #B6B6B6;
-    left: 5%;
+    left: 16%;
     top: 100%;
-    padding: 2.8% 3.6%;
+    padding: 2.8% 4%;
     border-radius: 50%;
 }
 .pos-2 i{
     position: absolute;
     border: 1px solid #B6B6B6;
-    left: 25%;
+    left: 35%;
     top: 100%;
     padding: 2.8%;
     border-radius: 50%;
@@ -902,7 +740,7 @@ input[type=email]:focus, input[type=text]:focus{
     position: absolute;
     top: 100%;
     border: 1px solid #B6B6B6;
-    left: 45%;
+    left: 55%;
     padding: 2.5%;
     border-radius: 50%;
 }
@@ -966,6 +804,14 @@ input[type=submit]{
     text-align: center;
     background-color: #FF7619;
     border: #FF7619;
+    width: 50%;
+    height: 30px;
+    font-size: 17px;
+    padding: 1%;
+    border-radius: 5px;
+}
+.submit-button{
+    text-align: center;
 }
 /* copyright design */
 .copyright{
@@ -993,3 +839,12 @@ input[type=submit]{
     transition: all .5s ease;
 }
 .cpr-link:hover{ background-size: 100% 1.5px, auto;}
+
+/* pop up window */
+/* .pop-up{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: rgba(0,0,0,0.8);
+} */

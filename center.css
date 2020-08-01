@@ -295,7 +295,7 @@ body{
     padding: 5px;    
 }
 .contacts{
-    left: 55%;
+    left: 53%;
     position: absolute;
     top: 8%;
     width: 180px;
@@ -307,21 +307,31 @@ body{
     /* margin-left: -5px; */
 }
 .con-pad{ 
-    padding-bottom: 5%;
-    padding-top: 5%;
+    padding-bottom: 6%;
+    padding-top: 6%;
+    font-size: 17px;
+}
+.con-pad>i{
+    position: absolute;
+    /* margin-top: 10px; */
+    padding-top: 4px;
+    /* background-color: #0097e6; */
+}
+.con-pad>span{
+    padding-left: 19px;
 }
 .pos-1 i{
     position: absolute;
     border: 1px solid #B6B6B6;
-    left: 5%;
+    left: 16%;
     top: 100%;
-    padding: 2.8% 3.6%;
+    padding: 2.8% 4%;
     border-radius: 50%;
 }
 .pos-2 i{
     position: absolute;
     border: 1px solid #B6B6B6;
-    left: 25%;
+    left: 35%;
     top: 100%;
     padding: 2.8%;
     border-radius: 50%;
@@ -330,7 +340,7 @@ body{
     position: absolute;
     top: 100%;
     border: 1px solid #B6B6B6;
-    left: 45%;
+    left: 55%;
     padding: 2.5%;
     border-radius: 50%;
 }
@@ -394,6 +404,14 @@ input[type=submit]{
     text-align: center;
     background-color: #FF7619;
     border: #FF7619;
+    width: 50%;
+    height: 30px;
+    font-size: 17px;
+    padding: 1%;
+    border-radius: 5px;
+}
+.submit-button{
+    text-align: center;
 }
 /* copyright design */
 .copyright{
