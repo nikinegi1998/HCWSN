@@ -445,4 +445,6 @@ input[type=submit]{
     background-position: center bottom;
     transition: all .5s ease;
 }
-.cpr-link:hover{ background-size: 100% 1.5px, auto;}
+.cpr-link:hover{ 
+    background-size: 100% 1.5px, auto;
+}

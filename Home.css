@@ -85,7 +85,7 @@ body{
     margin-top: 1px;
     background-color: #262F36;
     height: 70px;
-    z-index: 1;
+    /* z-index: 1; */
     border-bottom: 4px solid #FF7619;
 }
 .menu-items ul{
@@ -847,10 +847,58 @@ input[type=submit]{
 .cpr-link:hover{ background-size: 100% 1.5px, auto;}
 
 /* pop up window */
-/* .pop-up{
+.pop-up{
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
-    background: rgba(0,0,0,0.8);
-} */
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pop-up-window{
+    position: relative;
+    width: 48%;
+    height: 500px;
+    background-color: white;
+    opacity: 0.7;
+    margin: 0px;
+}
+
+.pop-up-window h1{
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.pop-up-window p{
+    text-align: center;
+    font-size: 27px;
+    padding-top: 20px;
+}
+.close{
+    margin: 0px;
+    /* background-color: red; */
+    position: absolute;
+    padding: 0;
+    top:0;
+    right:12px;
+    font-weight: bolder;
+    font-size: 44px;
+    transform: rotate(45deg);
+}
+
+.choose input[type=radio]{
+    text-align: center;
+    margin-left: 5rem;
+    color: #FF7619;
+}
+
+input[type=radio]:focus{
+    background-color: #FF7619
+}
+/* -----------------------about us--------------------------------------- */
+
