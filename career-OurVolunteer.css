@@ -89,8 +89,11 @@ body{
 }
 .menu-items ul{
     position: absolute;
+     display: flex;
+    flex-flow: nowrap;
     margin-left: 5%;
     top: 0px;
+    /* background-color: yellow; */
 }
 .menu-items ul li{
     position: relative;
@@ -109,7 +112,7 @@ body{
 }
 .menu-items ul li a{
     position: relative;
-    display: block;
+    display: flex;
     list-style: none;
     text-decoration: none;
     color: white;
@@ -143,6 +146,7 @@ body{
     margin-right: 0px;
 }
 .menu-items-sub-items ul{
+    display: block;
     margin-left: -20px;
     margin-top: 54px;
     padding: 0px;

@@ -89,8 +89,11 @@ body{
 }
 .menu-items ul{
     position: absolute;
+     display: flex;
+    flex-flow: nowrap;
     margin-left: 5%;
     top: 0px;
+    /* background-color: yellow; */
 }
 .menu-items ul li{
     position: relative;
@@ -109,7 +112,7 @@ body{
 }
 .menu-items ul li a{
     position: relative;
-    display: block;
+    display: flex;
     list-style: none;
     text-decoration: none;
     color: white;
@@ -133,27 +136,30 @@ body{
 }
 .menu-items ul li ul li{
     /* background-color: cadetblue; */
-    background-color: #ffffff;
-    color: #262F36;
+    /* background-color: #ffffff; */
+    background-color: #262F36;
+    /* color: #262F36; */
+    color: #ffffff;
     float: none;
     text-decoration: none;
     padding: 0px;
     margin-right: 0px;
 }
 .menu-items-sub-items ul{
+    display: block;
     margin-left: -20px;
     margin-top: 54px;
     padding: 0px;
     opacity: 0;
     transition: opacity 0.7s ease;
-    color: #ffffff;
-    box-shadow: 2px 2px 5px grey,-2px 2px 5px grey,2px 2px 5px grey,-2px 0px 5px grey,2px 0px 5px grey;
+    /* color: #ffffff; */
+    /* box-shadow: 2px 2px 5px grey,-2px 2px 5px grey,2px 2px 5px grey,-2px 0px 5px grey,2px 0px 5px grey; */
 }
 .menu-items-sub-items ul li{
     width: 200px;   
     line-height: 40px;
     display: none;
-    border-bottom: 1px solid rgb(199, 191, 191);    
+    /* border-top: 1px solid rgb(199, 191, 191);     */
 }
 .menu-items-sub-items ul li a{ 
     display: block;
@@ -161,8 +167,9 @@ body{
     padding: 0px;
     padding-left: 7px;
     top: 0px;
+    color: #ffffff;
     width: 170px;
-    color: #262F36;
+    /* color: #262F36; */
 }
 .menu-items-sub-items ul li a:hover{
     background-color: #FF7619;
