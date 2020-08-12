@@ -4,8 +4,8 @@ html{
 body{
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-    box-sizing: border-box;
+    /* overflow-x: hidden; */
+    /* box-sizing: border-box; */
 }
 
 /* Scrollbar */
@@ -29,7 +29,7 @@ body{
     height: 90px;
     background-color: white;
     margin: 0;
-    padding-right: 5px;
+    /* padding -right: 5px; */
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -42,12 +42,13 @@ body{
     width: 60%;
     margin-left: 70%;
     height: 90px;
-    display: flex;
+    display: absolute;
 }
 .phn-contact-details{
-    margin: 12px 0px 10px 42%;
+    margin: 12px 0px 10px 40%;
     width: 180px;
     display: flex;
+    /* background-color:red; */
     
 }
 .phn-contact-details .icon-box, .email-contact-details .icon-box{    
@@ -89,8 +90,11 @@ body{
 }
 .menu-items ul{
     position: absolute;
+     display: flex;
+    flex-flow: nowrap;
     margin-left: 5%;
     top: 0px;
+    /* background-color: yellow; */
 }
 .menu-items ul li{
     position: relative;
@@ -109,7 +113,7 @@ body{
 }
 .menu-items ul li a{
     position: relative;
-    display: block;
+    display: flex;
     list-style: none;
     text-decoration: none;
     color: white;
@@ -143,6 +147,7 @@ body{
     margin-right: 0px;
 }
 .menu-items-sub-items ul{
+    display: block;
     margin-left: -20px;
     margin-top: 54px;
     padding: 0px;
@@ -177,8 +182,8 @@ body{
     display: block;
 }
 
-/* Donate Now button */
-.donate-btn{
+/* support US button */
+.supportus-btn{
     margin-left: 75%;
     position: relative;
     margin-top: 0px;
@@ -372,7 +377,7 @@ body{
     height: 300px;
     padding-inline-start: 180px;
     padding-inline-end: 150px;
-    background: linear-gradient(rgba(255,255,255,0.25),rgba(255,255,255,0.25)),url(img1.jpeg);
+    background: linear-gradient(rgba(129, 33, 33, 0.25),rgba(255,255,255,0.25)),url(img1.jpeg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -446,32 +451,25 @@ body{
 /* cards */
 .cards{
     display: flex;
-    margin-top: 50px;
+    margin-top: 30px;
     width: 100%;
     margin-left: 0px;
     flex-flow: row nowrap;
-    padding-bottom: 4%;
-    padding: 7% 4%;
+    padding: 3% 4%;
     /* background-color: yellow; */
+    box-sizing: border-box;
 }
 .cardselements{
-    display: flex;
+    position: relative;
+    display: inline-block;
     width:20%;
     height: 280px;
-    /* background-color: red; */
-    /* float: left; */
-    margin-left: 130px;
-    /* text-align: center; */
-    /* -moz-box-align: center;
-    -webkit-box-align: center; */
+    padding: 0% 6.5%;
 }
 .card1, .card2, .card3{
     position: relative;
-    display: block;
+    /* display: block; */
     height: 250px;
-    width: 100%;
-    /* top: 50px; */
-    /* margin-left: 30px; */
     cursor: pointer;
     background-size: contain;
     color: #ffffff;
@@ -494,29 +492,30 @@ body{
 .card1 p, .card2 p, .card3 p{
     padding: 20px;
     display: flex;
-    margin-top: 60px;
+    margin-top: 40px;
     text-align: justify;
 }
 
 .card1 a, .card2 a, .card3 a{
-    position: relative;
+    position: absolute;
     /* box-sizing: border-box; */
     text-align: center;
     border-radius: 30px;
     border: 2px solid #FF7619;
-    padding: 7px;
+    padding: 8px 10px;
+    /* height: 80px; */
     background-color: #ffffff;
     text-decoration: none;
     color: #243238;
 }
 .readmore{
    /* background-color: rgb(207, 146, 33); */
-   box-sizing: border-box;
     text-align: center;
     width: 100%;
-    height: 30px;
-    position: relative;
-    top: -5px;
+    /* padding: 10px 30px; */
+    position: absolute;
+    top: 230px;
+    left: -50px;
 } 
 .readmore a:hover{
     background-color: #FF7619;
@@ -841,10 +840,96 @@ input[type=submit]{
 .cpr-link:hover{ background-size: 100% 1.5px, auto;}
 
 /* pop up window */
-/* .pop-up{
+.pop-up{
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
-    background: rgba(0,0,0,0.8);
-} */
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.pop-up-window{
+    position: relative;
+    width: 48%;
+    height: 500px;
+    background-color: white;
+    opacity: 0.7;
+    margin: 0px;   
+}
+
+.pop-up-window h1{
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.pop-up-window p{
+    text-align: center;
+    font-size: 27px;
+    padding-top: 20px;
+}
+.close{
+    margin: 0px;
+    /* background-color: red; */
+    position: absolute;
+    padding: 0;
+    top:0;
+    right:12px;
+    font-weight: bolder;
+    font-size: 44px;
+    transform: rotate(45deg);
+}
+
+.choose input[type=radio]{
+    text-align: center;
+    margin-left: 5rem;
+    color: #FF7619;
+}
+
+input[type=radio]:focus{
+    background-color: #FF7619
+}
+
+.or{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+    /* font-weight: bolder; */
+}
+.donate{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 42px;
+    font-weight: bolder;
+}
+
+.next-btn{
+    font-size:20px;
+    box-sizing: border-box;    
+    position: absolute; 
+    background-color: #FF7619;
+    /* float: right; */
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 30px;
+    border: 1px solid #FF7619; 
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer; 
+}
+
+.next-btn:hover{
+    color: #E9E9E9;
+}
+
+.next-btn:focus{
+    border: 1px solid #FF7619;
+}
+/* -----------------------about us--------------------------------------- */
+

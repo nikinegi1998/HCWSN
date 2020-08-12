@@ -206,27 +206,33 @@ body{
     margin-top: -22px;
     width: 100%;
     background: #243238;
-    background-image: linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)), url("temp.jpg");
+    background-image: linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)), url("img2.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 50% 50%;
     position: relative;
 }
 .tag-line{
-    position: absolute;
+    position: relative;
     color: #202a30;
     text-transform: uppercase;
-    top:25%;
-    left:37.5%;
+    top:20%;
+    /* left:44.5%; */
+    text-align: center;
     font-size: 40px;
+}
+.tag-line h1{
+    font-size: 45px;
 }
 .images-setting p a{
     text-decoration: none;
     color: #FF7619;
+    font-weight: bold;
 }
-.images-setting p{
-    position: absolute;
-    bottom: 10px;
-    left: 43%;
+.images-setting .tag-line p{
+    position: relative;
+    bottom: 0px;
+    left: 0;
     font-size: 17px;
 }
 
