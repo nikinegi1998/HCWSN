@@ -62,7 +62,8 @@ body{
     padding-top: 12px;
     font-family:  'Raleway', sans-serif;
 }
-.icon-content p{
+.icon-content p a{
+    text-decoration: none;
     color: #B6B6B6;
 }
 .email-contact-details{
@@ -291,6 +292,7 @@ body{
     padding-left: 10px;
     padding-right: 10px;
     font-size: 20.5px;
+    opacity: 0.7;
     text-align: justify;    
 }
 .latestevents{
@@ -841,6 +843,7 @@ input[type=submit]{
 
 /* pop up window */
 .pop-up{
+    z-index: 1;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -849,9 +852,8 @@ input[type=submit]{
     display: flex;
     justify-content: center;
     align-items: center;
-    display: none;
+    /* display: none; */
 }
-
 .pop-up-window{
     position: relative;
     width: 48%;
@@ -860,29 +862,29 @@ input[type=submit]{
     opacity: 0.7;
     margin: 0px;   
 }
-
 .pop-up-window h1{
     margin-top: 2rem;
     text-align: center;
     font-weight: bolder;
     text-decoration: underline;
 }
-
 .pop-up-window p{
     text-align: center;
     font-size: 27px;
     padding-top: 20px;
 }
 .close{
-    margin: 0px;
-    /* background-color: red; */
+    margin:0px;
+    background-color: red;
     position: absolute;
     padding: 0;
     top:0;
+    cursor: pointer;
     right:12px;
-    font-weight: bolder;
+    font-weight: bold;
+    display: flex;
     font-size: 44px;
-    transform: rotate(45deg);
+    /* transform: rotate(45deg); */
 }
 
 .choose input[type=radio]{
@@ -894,7 +896,6 @@ input[type=submit]{
 input[type=radio]:focus{
     background-color: #FF7619
 }
-
 .or{
     position: relative;
     text-align: center;
@@ -931,5 +932,3 @@ input[type=radio]:focus{
 .next-btn:focus{
     border: 1px solid #FF7619;
 }
-/* -----------------------about us--------------------------------------- */
-

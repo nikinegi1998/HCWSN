@@ -138,7 +138,8 @@ section .map p:last-child{
     outline: none;
 }
 .helpdesk form >input:focus{
-    background-color: rgb(207, 203, 203);
+    box-shadow: 0 0 10px rgb(196, 193, 193);
+    /* background-color: rgb(207, 203, 203); */
 }
 .helpdesk form>textarea{
     font-size: 18px;
@@ -151,7 +152,8 @@ section .map p:last-child{
     margin-bottom: 20px;
 }
 .helpdesk form>textarea:focus{
-    background-color: rgb(207, 203, 203);
+    box-shadow: 0 0 10px rgb(196, 193, 193);
+    /* background-color: rgb(207, 203, 203); */
 }
 .helpdesk form div{
     padding: 10px;

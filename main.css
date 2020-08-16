@@ -11,7 +11,7 @@ body{
 /* Scrollbar */
 ::-webkit-scrollbar{
     height: 0px;
-    width: 10px;
+    width: 12px;
 }
 ::-webkit-scrollbar-thumb{
     background-color: #FF7619;
@@ -203,7 +203,7 @@ body{
 /*  Contact Us Image */
 .images-setting{
     height: 180px;
-    margin-top: -22px;
+    margin-top: -30px;
     width: 100%;
     background: #243238;
     background-image: linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)), url("img2.jpeg");
@@ -217,6 +217,7 @@ body{
     color: #202a30;
     text-transform: uppercase;
     top:20%;
+    /* font-style: oblique; */
     /* left:44.5%; */
     text-align: center;
     font-size: 40px;
